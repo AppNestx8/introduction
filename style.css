@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.8;
+  color: #24494C;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #24494C;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-header {
+  font-size: 1rem;
+  text-align: center;
+  color: #24494C;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #d0d0d0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 1rem;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #24494C;
+}
+
+.card-badges {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.platform-badge {
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 80px;
+}
+
+.badge-platform {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #24494C;
+}
+
+.badge-label {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+/* レスポンシブデザイン（タブレット） */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 15px;
+  }
+
+  .container {
+    padding: 40px 25px;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .card-header {
+    font-size: 0.9rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .platform-badge {
+    padding: 6px 10px;
+    min-width: 70px;
+  }
+
+  .badge-platform {
+    font-size: 0.8rem;
+  }
+
+  .badge-label {
+    font-size: 0.7rem;
+  }
+}
+
+/* レスポンシブデザイン（スマートフォン） */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .card-header {
+    font-size: 0.9rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .platform-badge {
+    padding: 6px 10px;
+    min-width: 70px;
+  }
+
+  .badge-platform {
+    font-size: 0.8rem;
+  }
+
+  .badge-label {
+    font-size: 0.7rem;
+  }
+}
+
