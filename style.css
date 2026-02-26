@@ -169,18 +169,20 @@ body {
   color: var(--neu-text-muted);
 }
 
-.card-text1 {
-  font-size: 1.2rem;
+.card-text1,
+.card-text2,
+.blog-intro-link {
+  font-size: 1.15rem;
 }
 
-.card-text2 {
-  font-size: 1.05rem;
+.card-text1 {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 /* 紹介記事リンク（mode=blog のときのみ JS で表示） */
 .blog-intro-link {
   display: none;
-  font-size: 1.05rem;
   margin-top: 4px;
 }
 
@@ -259,11 +261,11 @@ body {
 /* レスポンシブデザイン（タブレット） */
 @media (max-width: 768px) {
   body {
-    padding: 20px 15px;
+    padding: 20px 8px;
   }
 
   .container {
-    padding: 40px 25px;
+    padding: 40px 12px;
   }
 
   .page-title {
@@ -296,12 +298,14 @@ body {
     padding: 5px 24px;
   }
 
-  .card-text1 {
-    font-size: 0.9rem;
+  .card-text1,
+  .card-text2,
+  .blog-intro-link {
+    font-size: 1rem;
   }
 
-  .card-text2 {
-    font-size: 0.85rem;
+  .card-text1 {
+    font-size: 1.1rem;
   }
 
   .platform-badge {
@@ -320,7 +324,7 @@ body {
 /* レスポンシブデザイン（スマートフォン） */
 @media (max-width: 480px) {
   .container {
-    padding: 30px 20px;
+    padding: 30px 10px;
   }
 
   .page-title {
@@ -350,12 +354,14 @@ body {
     padding: 4px 20px;
   }
 
-  .card-text1 {
-    font-size: 0.9rem;
+  .card-text1,
+  .card-text2,
+  .blog-intro-link {
+    font-size: 1rem;
   }
 
-  .card-text2 {
-    font-size: 0.85rem;
+  .card-text1 {
+    font-size: 1.1rem;
   }
 
   .platform-badge {
