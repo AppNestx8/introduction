@@ -1,4 +1,12 @@
 (function () {
+  var params = new URLSearchParams(window.location.search);
+  var mode = params.get("mode");
+  if (mode === "blog") {
+    document.querySelectorAll(".blog-intro-link").forEach(function (el) {
+      el.style.display = "block";
+    });
+  }
+
   function updateClosestCard() {
     var cards = document.querySelectorAll('.card');
     if (!cards.length) return;

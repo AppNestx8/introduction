@@ -170,11 +170,27 @@ body {
 }
 
 .card-text1 {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
 }
 
 .card-text2 {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
+}
+
+/* 紹介記事リンク（mode=blog のときのみ JS で表示） */
+.blog-intro-link {
+  display: none;
+  font-size: 1.05rem;
+  margin-top: 4px;
+}
+
+.blog-intro-link a {
+  color: var(--neu-text);
+  text-decoration: underline;
+}
+
+.blog-intro-link a:hover {
+  color: var(--neu-text-muted);
 }
 
 .card-badges {
