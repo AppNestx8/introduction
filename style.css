@@ -206,7 +206,7 @@ body {
   box-sizing: border-box;
 }
 
-/* プラットフォームバッジ - エンボスボタン風 */
+/* プラットフォームバッジ */
 .platform-badge {
   border-radius: 16px;
   padding: 0;
@@ -218,17 +218,18 @@ body {
   text-decoration: none;
   background: none;
   color: var(--neu-text);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.22), 2px 2px 6px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
 
 .platform-badge:hover {
-  opacity: 0.75;
-  transform: scale(0.96);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.28), 3px 3px 10px rgba(0, 0, 0, 0.18);
+  transform: scale(1.02);
 }
 
 .platform-badge:active {
-  opacity: 0.6;
-  transform: scale(0.92);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.18);
+  transform: scale(0.98);
 }
 
 .platform-badge img {
